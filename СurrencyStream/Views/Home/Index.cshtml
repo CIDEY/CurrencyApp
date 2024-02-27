@@ -1,0 +1,16 @@
+﻿@model List<CurrencyRate>
+
+<h1>Курсы валют</h1>
+<table>
+    <tr>
+        <th>Валюта</th>
+        <th>Курс</th>
+    </tr>
+    @foreach (var currency in Model)
+    {
+        <tr>
+            <td>@currency.Name</td>
+            <td>@currency.Value</td>
+        </tr>
+    }
+</table>
